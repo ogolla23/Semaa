@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #45a095;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.signup-btn {
+    background-color: #ff5722;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #ff7043;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.robot-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* How it Works Section Styles */
+.how-it-works {
+    padding: 40px 20px;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Updated Card Styles */
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: calc(25% - 20px);
+    min-width: 250px;
+    height: 255px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    align-items: flex-start; /* Changed from center to flex-start for left alignment */
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 16px; /* Added space between heading and paragraph */
+    margin-top: 10px; /* Ensures some space at the top */
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-content, .hero-image {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .card h1 {
+        font-size: 22px;
+    }
+    
+    .card p {
+        font-size: 15px;
+    }
+}
